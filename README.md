@@ -9,10 +9,7 @@ A simple web application which uses Machine Learning algorithm to predict the he
 As being a Data and ML enthusiast I have tried many different projects related to the subject but what I have realised is that Deploying your machine learning model is a key aspect of every ML and Data science project. Everything thing I had studied or been taught so far in my Data science and ML journey had mostly focused on defining problem statement followed by Data collection and preparation, model building and evaluation process which is of course important for every ML/DS project but what if I want different people to interact with my models, how can I make my model available for end-users? I can't send them jupyter notebooks right!. That's why I wanted to try my hands on complete end-to-end machine learning project. 
 
 - To View the Deployed Application, click on the link given below : 
-  **Heart Disease Predictor Web App -** *[https://heart-disease-predictor-flask.herokuapp.com/](https://heart-disease-predictor-flask.herokuapp.com/)*
-
-- To get the Code for Exploratory data analysis/visualisations, different algorithms used and the model evaluation, click on the link mentioned below :
-  **Link of jupyter notebook -** *[https://github.com/asthasharma98/Data-Science/blob/main/Heart%20Disease%20Prediction/heart_disease_prediction.ipynb](https://github.com/asthasharma98/Data-Science/blob/main/Heart%20Disease%20Prediction/heart_disease_prediction.ipynb)*
+  **Heart Disease Predictor Web App -** *[https://heart-disease-predictions-api.herokuapp.com/](https://heart-disease-predictions-api.herokuapp.com/)*
   
 **A Demo of the Web App :**
 
@@ -40,13 +37,6 @@ The Code is written in Python 3.8. If you don't have Python installed you can fi
 ```
 pip install -r requirements.txt 
 ```
-
-*To clone the repository*
-
-```
-git clone https://github.com/asthasharma98/Heart-Disease-Prediction-Deployment.git
-```
-
 ### Run 
 
 *To Run the Application*
@@ -75,10 +65,6 @@ next step would be to follow the instruction given on [Heroku Documentation](htt
 
 - improve model performance.
 - Add more better styling to the user interface.
-
-### credit 
-
-- A big thanks to [Anuj vyas](https://github.com/anujvyas/Diabetes-Prediction-Deployment) as I got the desinging idea of web app from his projects on github.
 
 **Some Useful Resources**
 
