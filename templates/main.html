@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Predictor</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Website Title -->
+
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
+    <div class='description'>
+      <p>A Machine Learning Web Application that predicits chances of having heart Disease or not, Built with Flask and Deployed using Heroku.</p><br>
+        <p>(Note:This model is 91% accurate)</p>
+    </div>
+  </div>
+
+  <!-- Text Area -->
+  <div class="ml-container">
+    <form action="{{ url_for('predict')}}" method="POST"> 
+
+      
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Your age.."><br>
+
+
+
+        <label for="sex">Sex</label>
+        <select id="sex" name="sex">
+          <option selected>----select option----</option>
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select><br>
+
+        <label for="chest_pain_type">Chest Pain Type</label>
+        <select id="chest_pain_type" name="chest_pain_type">
+          <option selected>----select option----</option>
+          <option value="1">Typical Angina</option>
+          <option value="2">Atypical Angina</option>
+          <option value="3">Non-anginal Pain</option>
+          <option value="4">Asymtomatic</option>
+        </select><br>
+
+        <label for="resting_blood_pressure">Resting Blood Pressure</label>
+        <input type="text" id="resting_blood_pressure" name="resting_blood_pressure" placeholder="A number in range [94-200] mmHg"><br>
+
+        <label for="fasting_blood_sugar">Fasting Blood Sugar</label>
+        <select id="fasting_blood_sugar" name="fasting_blood_sugar">
+          <option selected>----select option----</option>
+          <option value="1">Greater than 120 mg/dl</option>
+          <option value="0">Less than 120 mg/dl</option>
+        </select><br>
+
+        <label for="resting_ecg">Resting ECG Results</label>
+        <select id="resting_ecg" name="resting_ecg">
+          <option selected>----select option----</option>
+          <option value="0">Normal</option>
+          <option value="1">Having ST-T wave abnormality</option>
+          <option value="2">Probable or definite left ventricular
+            hypertrophy</option>
+        </select><br>
+
+        <label for="exercise_angina">Exercise-induced Angina</label>
+        <select id="exercise_angina" name="exercise_angina">
+          <option selected>----select option----</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select><br>
+
+        <label for="oldpeak">ST depression</label>
+        <input type="text" id="oldpeak" name="oldpeak" placeholder="ST depression, typically in [0-6.2]"><br>
+
+        <label for="ST_slope">slope of the peak exercise ST segment</label>
+        <select id="ST_slope" name="ST_slope">
+          <option selected>----select option----</option>
+          <option value="0">Normal</option>
+          <option value="1">Upsloping</option>
+          <option value="2">Flat</option>
+          <option value="2">Downsloping</option>
+        </select><br>
+
+        
+
+      
+
+      <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class='footer'>
+    <div class="contact">
+      <a target="_blank" href="https://github.com/architsharrma"><i
+          class="fab fa-github fa-lg contact-icon"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/archit-sharma-8329a6172/"><i
+          class="fab fa-linkedin fa-lg contact-icon"></i></a>
+    </div>
+    <p class='footer-description'>Made by Archit Sharma.</p>
+  </div>
+
+</body>
+
+</html>
